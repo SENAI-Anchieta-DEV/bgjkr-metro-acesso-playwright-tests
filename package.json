@@ -1,0 +1,16 @@
+{
+  "name": "metro-acesso-playwright-tests",
+  "version": "1.0.0",
+  "description": "Testes E2E com Playwright para o MetroAcesso, focados no CRUD de Administrador e Agente de Atendimento.",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:crud-admin": "playwright test e2e/05-crud-administrador.spec.js",
+    "test:crud-agente": "playwright test e2e/06-crud-agente.spec.js",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.0"
+  }
+}
